@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/gameboardFragment">
+    <fragment
+        android:id="@+id/gameboardFragment"
+        android:name="com.example.shwordle.GameboardFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_gameboardFragment_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.shwordle.profile_fragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_profile_fragment_to_gameboardFragment"
+            app:destination="@id/gameboardFragment" />
+    </fragment>
+</navigation>
